@@ -4,7 +4,7 @@ This document provides instructions for GitHub Copilot coding agent when working
 
 ## Repository Overview
 
-taxiboatdriver.com is a personal website for Serhii (qizh, `;,;`, taxiboatdriver). The website uses simple Markdown files for content.
+[taxiboatdriver.com](https://taxiboatdriver.com) is a Serhii's personal website. The website uses simple Markdown files for content.
 
 ## Technology Stack
 
@@ -32,7 +32,7 @@ taxiboatdriver.com/
 - Ensure links are valid and working
 
 ### Documentation
-- Keep README.md up to date with major changes
+- Keep `README.md` up to date with major changes
 - Document any special configurations or requirements
 - Include clear instructions for contributors
 
@@ -46,7 +46,7 @@ taxiboatdriver.com/
 5. **Follow Markdown best practices**
 
 ### For Documentation
-1. Update README.md when adding significant features
+1. Update `README.md` when adding significant features
 2. Keep documentation clear and concise
 3. Include examples where helpful
 
@@ -58,7 +58,7 @@ taxiboatdriver.com/
 - **DO NOT** make changes to `.github/agents/` directory (these are agent configuration files)
 
 ### Build Artifacts
-- **DO NOT** commit `.DS_Store` or other system files (covered by `.gitignore`)
+- **DO NOT** commit system artifacts (covered by `.gitignore`)
 - **DO NOT** commit temporary files
 
 ## File and Directory Guidelines
@@ -66,6 +66,7 @@ taxiboatdriver.com/
 ### Files to Ignore
 As per `.gitignore`:
 - `.DS_Store`
+- Other macOS artifacts
 
 ### Files to Keep in Source Control
 - All Markdown content files
@@ -83,5 +84,6 @@ The repository has a custom agent configured in `.github/agents/taxiboatdriver.a
 
 ---
 
-**Last Updated**: 2025-12-03
-**Author**: Serhii (qizh, `;,;`, taxiboatdriver)
+| Last Updated | Author | Author Nicknames |
+|--------------|--------|------------------|
+| 03.12.2025   | Serhii | `qizh` `;,;` `taxiboatdriver` |
