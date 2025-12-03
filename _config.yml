@@ -1,6 +1,6 @@
 title: taxiboatdriver
 description: >
   Minimalistic homepage for taxiboatdriver.com
-
+exlude: ["README.md", "**/README.md"]
 # theme: jekyll-theme-hacker    # <- If only it could bless us with a better list style
 theme: jekyll-theme-architect
