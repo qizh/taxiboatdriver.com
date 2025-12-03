@@ -110,7 +110,7 @@ A non-exhaustive list of things my brain refuses to let go of:
 I live in one country, was born in another, and work mostly in a third language, so my vocal cords run a small multilingual startup.
 
 - **Ukrainian** – my native firmware. The language of roots, with maximum depth and minimum user interface.
-- **russian** – also my navive. Often used for personal conversations, long messages, and detailed overthinking with extra nuance.
+- **russian** – also my native. Often used for personal conversations, long messages, and detailed overthinking with extra nuance.
 - **English** – fluent. Primary language for work, documentation, development, and arguing with compilers, APIs, and error messages.
 
 I actively switch between these depending on context:
