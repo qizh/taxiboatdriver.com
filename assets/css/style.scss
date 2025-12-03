@@ -1,0 +1,35 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Default basic colors for light color scheme
+:root {
+  --bg-color: #fdfdfd;
+  --text-color: #111;
+}
+
+// Overrides for dark color scheme by system configuration
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #050608;
+    --text-color: #f5f5f5;
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+// Center the content
+#content-wrapper .inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+// Hide the right sidebar with the button
+// (if it still exists)
+.extra {
+	display: none; 
+}
