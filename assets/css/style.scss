@@ -18,8 +18,20 @@
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+#content-wrapper {
+  background: var(--bg-color) !important;
+}
+
+a {
+  color: var(--text-color) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color) !important;
 }
 
 // Center the content
