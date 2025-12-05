@@ -54,7 +54,7 @@ code, tt {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   background: rgba(var(--accent-color-rgb), 0.1);
-  color: var(--text-color);
+  color: var(--text-color) !important;
 }
 
 blockquote {
@@ -62,7 +62,7 @@ blockquote {
   padding-left: 16px;
   border-left: 4px solid var(--accent-color);
   font-style: italic;
-  color: var(--muted-color);
+  color: var(--muted-color) !important;
 }
 
 #content-wrapper .inner {
