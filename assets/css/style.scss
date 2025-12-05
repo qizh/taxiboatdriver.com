@@ -57,6 +57,14 @@ code, tt {
   color: var(--text-color);
 }
 
+blockquote {
+  margin: 0 0 16px;
+  padding-left: 16px;
+  border-left: 4px solid var(--accent-color);
+  font-style: italic;
+  color: var(--muted-color);
+}
+
 #content-wrapper .inner {
   max-width: 900px;
   margin: 0 auto;
