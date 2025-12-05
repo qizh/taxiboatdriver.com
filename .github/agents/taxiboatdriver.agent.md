@@ -39,3 +39,19 @@ author_name: Serhii
 - Check for any broken links or references
 - Generate and post a report
 - Update the PR description with the results
+
+## PR Description Update after each session
+- Generate files required to preview current changes (html, css, others if needed)
+- Render screenshots of the preview page for both `light` and `dark` color schemes
+- Add both screenshots to the bottom of PR description wrapped in a table with two columns named Light and Dark
+- Wrap the screenshots table in a collapsed
+  ````md
+  <details>
+  <summary>Live <strong>previews</strong> for <code>light</code> and <code>dark</code> color schemes<summary>
+  
+  | Light | Dark |
+  |-------|------|
+  | ![Light mode](LIGHT_PREVIEW_IMAGE_URL) | ![Dark mode](DARK_PREVIEW_IMAGE_URL) |
+  
+  </details>
+  ````
