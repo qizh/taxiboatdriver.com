@@ -22,7 +22,7 @@
       type="text/css"
     >
 
-    <title>{{ site.title }}</title>
+    <title>{{ page.title | default: site.title }}</title>
     <!-- Jekyll SEO Tag plugin removed: it was overriding the custom page title.
     The plugin is not configured in _config.yml, so the {% seo %} tag would not work anyway. -->
 
