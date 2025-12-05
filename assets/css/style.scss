@@ -7,13 +7,16 @@
   color-scheme: light dark;
   --bg-color: #fdfdfd;
   --text-color: #111;
+  --muted-color: #444;
   --accent-color: #4fdab6;
+  --accent-color-rgb: 79, 218, 182;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #050608;
     --text-color: #f5f5f5;
+    --muted-color: #c7c7c7;
   }
 }
 
@@ -50,7 +53,7 @@ code, tt {
   padding: 0.2em 0.5em;
   border: 1px solid var(--accent-color);
   border-radius: 4px;
-  background: rgba(79, 218, 182, 0.1);
+  background: rgba(var(--accent-color-rgb), 0.1);
   color: var(--text-color);
 }
 

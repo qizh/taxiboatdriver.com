@@ -11,6 +11,7 @@
   --text-color: #111;
   --muted-color: #444;
   --accent-color: #4fdab6;
+  --accent-color-rgb: 79, 218, 182;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -79,7 +80,7 @@ li {
 
 hr {
   border: 0;
-  border-top: 1px solid rgba(79, 218, 182, 0.3);
+  border-top: 1px solid rgba(var(--accent-color-rgb), 0.3);
   margin: 28px 0;
 }
 
@@ -99,10 +100,18 @@ code, tt {
   padding: 0.3em 0.6em;
   border: 1px solid var(--accent-color);
   border-radius: 6px;
-  background: rgba(79, 218, 182, 0.12);
+  background: rgba(var(--accent-color-rgb), 0.12);
   color: var(--text-color);
   font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.94em;
+}
+
+blockquote {
+  margin: 0 0 16px;
+  padding-left: 16px;
+  border-left: 4px solid var(--accent-color);
+  font-style: italic;
+  color: var(--muted-color);
 }
 
 .section-lead {
