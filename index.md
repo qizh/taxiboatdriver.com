@@ -1,4 +1,4 @@
-# Hello I’m Serhii
+# Hello, I’m Serhii
 
 Also known as `qizh`, `;,;`, or `taxiboatdriver` — despite having driven exactly zero taxi boats. So far.
 
