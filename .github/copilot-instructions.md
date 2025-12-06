@@ -33,7 +33,7 @@ taxiboatdriver.com/
 
 ### Pages live preview screenshots
 - Should be generated and added to PR, comment, or a documentation `.md` file
-- Screenshots should be made for both `light` and `datk` color schemes and wrapped into a table
+- Screenshots should be made for both `light` and `dark` color schemes and wrapped into a table
 - Screenshots table should be wrapped into a `<details><summary>SUMMARY_TEXT</summary> ... </details>`
 - Summary should contain the following badge: <img src="/.github/assets/screenshots.yellow.pill.stroke.svg" width="119pt" height="24pt" alt="screenshots">
 
