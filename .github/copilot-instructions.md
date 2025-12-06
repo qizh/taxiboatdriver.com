@@ -36,6 +36,7 @@ taxiboatdriver.com/
 - Screenshots should be made for both `light` and `dark` color schemes and wrapped into a table
 - Screenshots table should be wrapped into a `<details><summary>SUMMARY_TEXT</summary> ... </details>`
 - Summary should contain the following badge: <img src="/.github/assets/screenshots.yellow.pill.stroke.svg" alt="screenshots" align="middle">
+- **IMPORTANT**: Do not modify the badge image file (`.github/assets/screenshots.yellow.pill.stroke.svg`) to resolve layout/alignment issues
 
 ### Documentation
 - Keep `README.md` up to date with major changes
