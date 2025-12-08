@@ -35,7 +35,7 @@ taxiboatdriver.com/
 - Should be generated and added to PR, comment, or a documentation `.md` file
 - Screenshots should be made for both `light` and `dark` color schemes and wrapped into a table
 - Screenshots table should be wrapped into a `<details><summary>SUMMARY_TEXT</summary> ... </details>`
-- Summary should contain <mark><code>screenshots</code></mark>
+- Summary should contain **screenshots** or **previews** wrapped into `<mark><code>...</code></mark>` like this: <mark><code>screenshots</code></mark> or <mark><code>previews</code></mark>
 
 ### Documentation
 - Keep `README.md` up to date with major changes
