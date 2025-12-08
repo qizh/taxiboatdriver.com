@@ -31,6 +31,12 @@ taxiboatdriver.com/
 - Use proper heading hierarchy
 - Ensure links are valid and working
 
+### Pages live preview screenshots
+- Should be generated and added to PR, comment, or a documentation `.md` file
+- Screenshots should be made for both `light` and `dark` color schemes and wrapped into a table with two columns named Light and Dark
+- Screenshots table should be wrapped into a `<details><summary>SUMMARY_TEXT</summary> ... </details>`
+- Summary should contain **screenshots** or **previews** wrapped into `<mark><code>...</code></mark>` like this: <mark><code>screenshots</code></mark> or <mark><code>previews</code></mark>
+
 ### Documentation
 - Keep `README.md` up to date with major changes
 - Document any special configurations or requirements
