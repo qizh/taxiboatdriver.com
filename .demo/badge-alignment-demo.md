@@ -12,11 +12,11 @@ This document demonstrates various approaches to align a badge image with surrou
 
 **HTML:**
 ```html
-<img src=".demo/assets/badge-original.svg" alt="screenshots" align="middle">
+<img src="https://raw.githubusercontent.com/qizh/taxiboatdriver.com/copilot/sub-pr-10/.demo/assets/badge-original.svg" alt="screenshots" align="middle">
 ```
 
 **Rendered:**
-- Text before badge <img src=".demo/assets/badge-original.svg" alt="screenshots" align="middle"> text after badge.
+- Text before badge <img src="https://raw.githubusercontent.com/qizh/taxiboatdriver.com/copilot/sub-pr-10/.demo/assets/badge-original.svg" alt="screenshots" align="middle"> text after badge.
 
 **Notes:**
 - This is the current implementation
@@ -30,11 +30,11 @@ This document demonstrates various approaches to align a badge image with surrou
 
 **HTML:**
 ```html
-<sub><img src=".demo/assets/badge-original.svg" alt="screenshots"></sub>
+<sub><img src="https://raw.githubusercontent.com/qizh/taxiboatdriver.com/copilot/sub-pr-10/.demo/assets/badge-original.svg" alt="screenshots"></sub>
 ```
 
 **Rendered:**
-- Text before badge <sub><img src=".demo/assets/badge-original.svg" alt="screenshots"></sub> text after badge.
+- Text before badge <sub><img src="https://raw.githubusercontent.com/qizh/taxiboatdriver.com/copilot/sub-pr-10/.demo/assets/badge-original.svg" alt="screenshots"></sub> text after badge.
 
 **Notes:**
 - Shifts badge vertically (lower)
@@ -48,12 +48,12 @@ This document demonstrates various approaches to align a badge image with surrou
 
 **HTML:**
 ```html
-<table><tr><td valign="middle">Text <img src=".demo/assets/badge-original.svg" alt="screenshots"></td></tr></table>
+<table><tr><td valign="middle">Text <img src="https://raw.githubusercontent.com/qizh/taxiboatdriver.com/copilot/sub-pr-10/.demo/assets/badge-original.svg" alt="screenshots"></td></tr></table>
 ```
 
 **Rendered:**
 
-<table><tr><td valign="middle">Text <img src=".demo/assets/badge-original.svg" alt="screenshots"></td></tr></table>
+<table><tr><td valign="middle">Text <img src="https://raw.githubusercontent.com/qizh/taxiboatdriver.com/copilot/sub-pr-10/.demo/assets/badge-original.svg" alt="screenshots"></td></tr></table>
 
 **Notes:**
 - Complex structure for inline element
@@ -80,11 +80,11 @@ This approach modifies the SVG's `viewBox` to add transparent padding, shifting 
 
 **HTML:**
 ```html
-<img src=".demo/assets/badge-with-padding.svg" alt="screenshots" align="middle">
+<img src="https://raw.githubusercontent.com/qizh/taxiboatdriver.com/copilot/sub-pr-10/.demo/assets/badge-with-padding.svg" alt="screenshots" align="middle">
 ```
 
 **Rendered:**
-- Text before badge <img src=".demo/assets/badge-with-padding.svg" alt="screenshots" align="middle"> text after badge.
+- Text before badge <img src="https://raw.githubusercontent.com/qizh/taxiboatdriver.com/copilot/sub-pr-10/.demo/assets/badge-with-padding.svg" alt="screenshots" align="middle"> text after badge.
 
 **Notes:**
 - When `align="middle"` is applied, the modified viewBox causes better alignment
@@ -104,11 +104,11 @@ This approach increases the SVG's physical height while adding transparent top p
 
 **HTML:**
 ```html
-<img src=".demo/assets/badge-tall-with-top-padding.svg" alt="screenshots" align="middle">
+<img src="https://raw.githubusercontent.com/qizh/taxiboatdriver.com/copilot/sub-pr-10/.demo/assets/badge-tall-with-top-padding.svg" alt="screenshots" align="middle">
 ```
 
 **Rendered:**
-- Text before badge <img src=".demo/assets/badge-tall-with-top-padding.svg" alt="screenshots" align="middle"> text after badge.
+- Text before badge <img src="https://raw.githubusercontent.com/qizh/taxiboatdriver.com/copilot/sub-pr-10/.demo/assets/badge-tall-with-top-padding.svg" alt="screenshots" align="middle"> text after badge.
 
 **Notes:**
 - Increases overall image dimensions
