@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>taxiboatdriver</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --bg-color: #fdfdfd;
+  --text-color: #111;
+  --muted-color: #444;
+  --accent-color: #4fdab6;
+  --accent-color-rgb: 79, 218, 182;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #050608;
+    --text-color: #f5f5f5;
+    --muted-color: #c7c7c7;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 0;
+}
+
+header {
+  padding: 32px 16px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  letter-spacing: 0.02em;
+}
+
+header p {
+  margin: 0;
+  color: var(--muted-color);
+}
+
+main {
+  max-width: 900px;
+  margin: 32px auto 64px;
+  padding: 0 16px;
+}
+
+h2 {
+  border-left: 6px solid var(--accent-color);
+  padding-left: 10px;
+  margin-top: 36px;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+ul {
+  margin: 0 0 16px 24px;
+  padding: 0;
+}
+
+li {
+  margin: 6px 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(var(--accent-color-rgb), 0.3);
+  margin: 28px 0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration-color: var(--accent-color);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+code, tt {
+  display: inline;
+  padding: 0.2em 0.5em;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  background: rgba(var(--accent-color-rgb), 0.1);
+  color: var(--text-color);
+  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.94em;
+}
+
+blockquote {
+  margin: 0 0 16px;
+  padding-left: 16px;
+  border-left: 4px solid var(--accent-color);
+  font-style: italic;
+  color: var(--muted-color);
+}
+
+.section-lead {
+  color: var(--muted-color);
+  font-style: italic;
+  margin-bottom: 12px;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>taxiboatdriver</h1>
+    <p class="section-lead">Standalone preview for local development</p>
+  </header>
+  <main>
+    <h2>Hello, I’m Serhii – allegedly a taxiboatdriver</h2>
+    <p>Also known as <code>qizh</code>, <code>;,;</code>, or <code>taxiboatdriver</code> — despite having driven exactly zero taxi boats. So far.</p>
+    <p>I design and build apps for Apple platforms, automate my house a bit too much, and live on a tropical island questioning all my life choices in a very structured, Swift-like manner.</p>
+
+    <hr>
+
+    <h2>Where I came from</h2>
+    <p>I was born and raised in Kyiv, Ukraine, back when floppy disks were still a thing and “saving your progress” meant both in games and in life.</p>
+    <p>I spent about 30 years in Kyiv:</p>
+    <ul>
+      <li>Learned to love tech, computers, and all things that can be taken apart and sometimes even assembled back.</li>
+      <li>Developed a long-term relationship with logic, science, and asking “but why exactly?” about everything.</li>
+      <li>Survived enough winters to confidently say: I’ve done my time.</li>
+    </ul>
+    <p>Kyiv is still “home” in the deep-brain firmware kind of way, even if my IP address strongly disagrees.</p>
+
+    <hr>
+
+    <h2>Where I live now</h2>
+    <p>For the last <strong>11 years and 9 days</strong> (yes, I did the math), I’ve been living on <strong>Koh Phangan, Thailand</strong> — a tropical island famous for:</p>
+    <ul>
+      <li>beaches,</li>
+      <li>parties,</li>
+      <li>and people who said “I’ll stay for a month” and forgot to leave.</li>
+    </ul>
+    <p>I am one of those people.</p>
+    <p>These days I live somewhere between jungle, sea, and Wi-Fi coverage, sharing the place with:</p>
+    <ul>
+      <li>a very opinionated Siamese cat,</li>
+      <li>a sugar glider with parkour ambitions,</li>
+      <li>and fish who rent a huge outdoor bowl in exchange for eating mosquito larvae.</li>
+    </ul>
+
+    <hr>
+
+    <h2>What I do for a living</h2>
+    <p>I’m a <strong>Swift / SwiftUI developer</strong> building apps for:</p>
+    <ul>
+      <li><strong>iOS</strong></li>
+      <li><strong>iPadOS</strong></li>
+      <li><strong>macOS</strong> (and occasionally eyeing visionOS like, "one day…")</li>
+    </ul>
+    <p>What I actually do:</p>
+    <ul>
+      <li>Architect and implement apps with a focus on:
+        <ul>
+          <li>clean, modern Swift,</li>
+          <li>SwiftUI-first UI,</li>
+          <li>new platform features (yes, even the beta ones),</li>
+          <li>and code that future-me hopefully won’t hate.</li>
+        </ul>
+      </li>
+      <li>Play with:
+        <ul>
+          <li>Swift 6+ features, macros, and all the shiny new toys.</li>
+          <li>Async stuff, structured concurrency, and polite fights with the compiler.</li>
+        </ul>
+      </li>
+      <li>Integrate:
+        <ul>
+          <li>AI backends,</li>
+          <li>APIs,</li>
+          <li>and whatever else someone decided “will only take a couple of hours” (it won’t).</li>
+        </ul>
+      </li>
+    </ul>
+    <p><strong>Short version:</strong></p>
+    <blockquote>
+      I turn coffee, bug reports, and design docs into SwiftUI views and questionable TODO comments.
+    </blockquote>
+
+    <hr>
+
+    <h2>What I do for fun</h2>
+    <p>When I’m not arguing with Xcode, I:</p>
+    <ul>
+      <li>
+        <strong>Photograph and film life on the island</strong><br>
+        Parties, lights, people, random details — then spend an unreasonable amount of time syncing it perfectly to music in video edits.
+      </li>
+      <li>
+        <strong>Over-engineer my smart home</strong><br>
+        Home Assistant, sensors, dashboards, cameras, automations — if something in the house can be automated, it probably already is or is on a YAML todo list.
+      </li>
+      <li>
+        <strong>Design things that don't exist yet</strong><br>
+        Including:
+        <ul>
+          <li>UI concepts,</li>
+          <li>playful ideas for <strong>women's underwear design</strong>,</li>
+          <li>and other "one day I'll actually produce this" concepts.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Dive into psychology and systems</strong><br>
+        I enjoy picking apart:
+        <ul>
+          <li>human behavior,</li>
+          <li>motivation,</li>
+          <li>interactions,</li>
+          <li>and how all of that maps to something like a mental state machine with too many edge cases.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Play and tinker with tech &amp; AI</strong><br>
+        New tools, new models, new frameworks, new ways to make my life slightly easier and my setups significantly more complicated.
+      </li>
+    </ul>
+
+    <hr>
+
+    <h2>Hobbies and interests</h2>
+    <p>A non-exhaustive list of things my brain refuses to let go of:</p>
+    <ul>
+      <li><strong>Technology &amp; computers</strong> — from low-level details to UX.</li>
+      <li><strong>Swift, SwiftUI &amp; app architecture</strong> — because one framework is never enough.</li>
+      <li><strong>Psychology</strong> — especially how people think, decide, and get stuck.</li>
+      <li><strong>Physics &amp; space</strong> — because why not also worry about cosmic scales.</li>
+      <li><strong>Genetics &amp; neuroscience (as a curious outsider)</strong> — understanding how much of us is wiring vs. software.</li>
+      <li><strong>Electronics &amp; gadgets</strong> — things that click, blink, and occasionally explode (metaphorically).</li>
+      <li><strong>Parties &amp; music</strong> — electronic, dance, and everything that feels good at 3 AM on an island.</li>
+      <li><strong>Photography &amp; videography</strong> — capturing moments, then obsessing over color grading.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Languages I speak</h2>
+    <p>I live in one country, was born in another, and work mostly in a third language, so my vocal cords run a small multilingual startup.</p>
+    <ul>
+      <li><strong>Ukrainian</strong> – my native firmware. The language of roots, with maximum depth and minimum user interface.</li>
+      <li><strong>russian</strong> – also my native. Often used for personal conversations, long messages, and detailed overthinking with extra nuance.</li>
+      <li><strong>English</strong> – fluent. Primary language for work, documentation, development, and arguing with compilers, APIs, and error messages.</li>
+    </ul>
+    <p>I actively switch between these depending on context:</p>
+    <ul>
+      <li>English for apps, code, and tech discussions.</li>
+      <li>russian for life, feelings, and the kind of topics that don’t belong in a commit message.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Why “taxiboatdriver”?</h2>
+    <p>Because:</p>
+    <ul>
+      <li>It’s slightly absurd.</li>
+      <li>It sounds like a guy who might pick you up from a pier at 3 AM.</li>
+      <li>It’s one of those jobs even Thai people can't apply for.</li>
+    </ul>
+    <p>Also, if someone ever yells “taxi boat!” on the beach, I can pretend it’s free brand activation.</p>
+
+    <hr>
+
+    <h2>If you’re here for something practical</h2>
+    <p>You might want to:</p>
+    <ul>
+      <li><strong>Talk about apps</strong>
+        <ul>
+          <li>Need an app for Apple platforms?</li>
+          <li>Want to modernize a codebase with SwiftUI?</li>
+          <li>Curious how to wire AI into your app without burning it down?</li>
+        </ul>
+      </li>
+      <li><strong>Talk about automation</strong>
+        <ul>
+          <li>Smart home setups,</li>
+          <li>Home Assistant,</li>
+          <li>Apple/HomeKit, Matter, Thread, and Zigbee integration,</li>
+          <li>making your lights, sensors, and speakers behave like a tiny obedient orchestra.</li>
+        </ul>
+      </li>
+      <li><strong>Talk about anything from the list above</strong><br>Tech, space &amp; physics, design, AI, island life, psychology, or my favorite: “how did you end up living there for over 11 years??”.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Where to find me</h2>
+    <p>Online, you’ll usually see me as:</p>
+    <ul>
+      <li><code>qizh</code></li>
+      <li><code>;,;</code></li>
+      <li><code>taxiboatdriver</code></li>
+    </ul>
+    <p>If you’ve seen these somewhere near Swift, SwiftUI, AI, or smart home discussions — that was probably me.</p>
+    <p>And if you somehow landed here by typing <em>“actual taxi boat driver Koh Phangan”</em> into a search engine:</p>
+    <ul>
+      <li>I can’t take you to another island,</li>
+      <li>but I can help you ship an app.</li>
+    </ul>
+  </main>
+</body>
+</html>

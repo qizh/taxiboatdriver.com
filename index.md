@@ -57,7 +57,7 @@ What I actually do:
 	- APIs,
 	- and whatever else someone decided “will only take a couple of hours” (it won’t).
 
-Short version:
+**Short version:**
 > I turn coffee, bug reports, and design docs into SwiftUI views and questionable TODO comments.
 
 ---
