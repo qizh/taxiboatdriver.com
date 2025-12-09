@@ -131,7 +131,7 @@ Text always uses `--text-color` or `--muted-color`, ensuring readability.
 | **Contrast Ratio** | 18.56:1 | 18.59:1 | ✅ Virtually identical |
 | **Visual Hierarchy** | Clear | Clear | ✅ Fully maintained |
 | **Accent Usage** | Decorative | Decorative + Visible | ✅ Both appropriate |
-| **Eye Comfort** | Good (bright env.) | Excellent (low light) | ✅ Purpose-appropriate |
+| **Eye Comfort** | Good (bright environment) | Excellent (low light) | ✅ Purpose-appropriate |
 | **Brand Identity** | Strong | Strong | ✅ Consistent |
 | **Professionalism** | High | High | ✅ Equal |
 
