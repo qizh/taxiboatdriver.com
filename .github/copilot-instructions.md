@@ -42,6 +42,12 @@ taxiboatdriver.com/
 - Document any special configurations or requirements
 - Include clear instructions for contributors
 
+### Color Representation
+- When documenting colors in tables or documentation, use shields.io badges for visual representation
+- Format: `![Label](https://img.shields.io/badge/%23-HEXCODE-HEXCODE?style=flat&labelColor=white)` for light backgrounds
+- Format: `![Label](https://img.shields.io/badge/%23-HEXCODE-HEXCODE?style=flat&labelColor=black)` for dark backgrounds
+- Example: `![AC-L](https://img.shields.io/badge/%23-00C7BE-00C7BE?style=flat&labelColor=white)` displays the accent color visually
+
 ## What You Should Do
 
 ### For Content Changes

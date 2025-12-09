@@ -41,7 +41,7 @@ The site uses CSS custom properties (CSS variables) with `@media (prefers-color-
 
 **Design Notes:**
 - Dark mode background uses a very dark blue-black instead of pure black, which is easier on the eyes
-- Accent color remains consistent across themes, maintaining brand identity
+- Accent color is optimized for each theme: darker teal for light mode, brighter teal for dark mode
 - Muted color properly adjusted for each theme to maintain hierarchy
 
 ---
