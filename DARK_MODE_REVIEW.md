@@ -32,12 +32,12 @@ This comprehensive review included:
 
 The site uses CSS custom properties (CSS variables) with `@media (prefers-color-scheme: dark)` for automatic theme switching:
 
-| Property | Light Mode | Dark Mode |
-|----------|------------|-----------|
-| Background | `#fdfdfd` (almost white) | `#050608` (very dark blue-black) |
-| Text | `#111` (near black) | `#f5f5f5` (off-white) |
-| Muted | `#444` (dark gray) | `#c7c7c7` (light gray) |
-| Accent | `#4fdab6` (turquoise) | `#4fdab6` (same - brand consistency) |
+| Property   | Light Mode | Dark Mode |
+|------------|------------|-----------|
+| Background | ![BG-L](https://img.shields.io/badge/%23-FDFDFD-FDFDFD?style=flat&labelColor=white) | ![BG-D](https://img.shields.io/badge/%23-050608-050608?style=flat&labelColor=black) |
+| Text       | ![TE-L](https://img.shields.io/badge/%23-111111-111111?style=flat&labelColor=white) | ![TE-D](https://img.shields.io/badge/%23-F5F5F5-F5F5F5?style=flat&labelColor=black) |
+| Muted      | ![MU-L](https://img.shields.io/badge/%23-444444-444444?style=flat&labelColor=white) | ![MU-D](https://img.shields.io/badge/%23-C7C7C7-C7C7C7?style=flat&labelColor=black) |
+| Accent     | ![AC-L](https://img.shields.io/badge/%23-00C7BE-00C7BE?style=flat&labelColor=white) | ![AC-D](https://img.shields.io/badge/%23-63E6E2-63E6E2?style=flat&labelColor=black) |
 
 **Design Notes:**
 - Dark mode background uses a very dark blue-black instead of pure black, which is easier on the eyes
