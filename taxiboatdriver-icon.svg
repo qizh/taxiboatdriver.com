@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>favicon</title>
+    <defs>
+        <linearGradient x1="100%" y1="1.39798832%" x2="0%" y2="97.3191042%" id="linearGradient-1">
+            <stop stop-color="color(display-p3 0.749 0.852 0.505)" offset="0%"></stop>
+            <stop stop-color="color(display-p3 0.000 0.855 0.859)" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="99.3046875%" y1="50%" x2="0%" y2="50%" id="linearGradient-2">
+            <stop stop-color="color(display-p3 0.000 0.000 0.000)" stop-opacity="0.16" offset="0%"></stop>
+            <stop stop-color="color(display-p3 0.000 0.000 0.000)" stop-opacity="0.04" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="favicon" stroke="none" fill="none" fill-rule="evenodd">
+        <rect id="frame" fill-opacity="0" fill="color(display-p3 0.000 0.000 0.000)" x="0" y="0" width="48" height="48"></rect>
+        <path d="M33,24 L42,24 L42,36 L33,45 L33,24 Z M37.5,16.5 C40.8137085,16.5 43.5,13.8137085 43.5,10.5 C43.5,7.1862915 40.8137085,4.5 37.5,4.5 C34.1862915,4.5 31.5,7.1862915 31.5,10.5 C31.5,13.8137085 34.1862915,16.5 37.5,16.5 Z M21,24 L30,24 L30,36 L21,45 L21,24 Z M9,24 L18,24 L18,36 L9,45 L9,24 Z M13.5,16.5 C16.8137085,16.5 19.5,13.8137085 19.5,10.5 C19.5,7.1862915 16.8137085,4.5 13.5,4.5 C10.1862915,4.5 7.5,7.1862915 7.5,10.5 C7.5,13.8137085 10.1862915,16.5 13.5,16.5 Z" id=";,;-shape" fill="url(#linearGradient-1)"></path>
+        <path d="M0,39 L6,39 L6,42 L0,42 Z M0,30 L6,30 L6,33 L0,33 Z M0,24 L6,24 L6,27 L0,27 Z M0,9 L6,9 L6,12 L0,12 Z" id="speed" fill="url(#linearGradient-2)"></path>
+    </g>
+</svg>
