@@ -3,41 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
 
+    <link rel="icon" type="image/x-icon" href="{{ '/taxiboatdriver_favicon.ico' | relative_url }}">
     <link
       rel="stylesheet"
       href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"
       media="screen"
       type="text/css"
     >
-    <link
-      rel="stylesheet"
-      href="{{ '/assets/css/print.css' | relative_url }}"
-      media="print"
-      type="text/css"
-    >
     
-    <title>{{ page.title | default: site.title }}</title>
+    <title>{{ page.title | default: site.title | default: "taxiboatdriver" }}</title>
     
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-
     {% include head-custom.html %}
   </head>
 
   <body>
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <main id="main-content">
+    <div class="app-shell">
+      <header>
+        <div class="header-left">
+          <div class="logo-pill">
+            <img src="{{ '/taxiboatdriver-icon.svg' | relative_url }}" alt="taxiboatdriver logo">
+          </div>
+          <div class="header-text-block">
+            <div class="header-title-text">TAXIBOATDRIVER</div>
+            <div class="header-subtitle-text">Swift, islands &amp; slightly overengineered life</div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="content-card">
           {{ content }}
-        </main>
-      </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>
