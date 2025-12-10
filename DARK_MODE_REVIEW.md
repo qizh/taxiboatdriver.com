@@ -201,7 +201,7 @@ Both themes provide:
 ## Visual Evidence
 
 <details>
-<summary>Live <mark><code>previews</code></mark> for <mark><code>light</code></mark> and <mark><code>dark</code></mark> color schemes</summary>
+<summary>Live <mark><code>previews</code></mark> for <code>light</code> and <code>dark</code> color schemes</summary>
 
 | Light | Dark |
 |-------|------|
