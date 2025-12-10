@@ -82,7 +82,7 @@ color-scheme: light dark;
 /*==== Received gradients ====*/
 /*----- Regular -----*/
 --accent-gradient-horizontal: linear-gradient(90deg, var(--accent-start) 0%, var(--accent-end) 100%);
-  /*----- Muted -----*/
+/*----- Muted -----*/
 --accent-dimmed-gradient-horizontal: linear-gradient(90deg, var(--accent-dimmed-start) 0%, var(--accent-dimmed-end) 100%);
 }
 }
