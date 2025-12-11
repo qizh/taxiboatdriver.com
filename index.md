@@ -184,7 +184,7 @@ I live in one country, was born in another, and work mostly in a third language,
 My brain runs a two-language load balancer:
 
 - `English` for apps, code, serious tech talk, and surviving conversations with the international crowd orbiting me on the island.
-- russian for life, feelings, and the kind of topics that don't belong in a commit message.
+- `russian` for daily life, emotions, and those conversations that are better kept far away from version control history.
 
 </section>
 
