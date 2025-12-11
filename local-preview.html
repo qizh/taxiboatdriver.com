@@ -4,318 +4,692 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/x-icon" href="taxiboatdriver_favicon.ico">
 <title>taxiboatdriver</title>
 <style>
 :root {
-  color-scheme: light dark;
-  --bg-color: #fdfdfd;
-  --text-color: #111;
-  --muted-color: #444;
-  --accent-color: #4fdab6;
-  --accent-color-rgb: 79, 218, 182;
+	color-scheme: light dark;
+
+	/* Accent: in the light theme a little darker, so as not to get lost on the white */
+	--accent-color: #00b49f;
+	--accent-color-rgb: 0, 180, 159;
+	
+	/* Card and indents */
+	--card-radius: 30px;
+	--card-padding: 20px;
+
+	/* Light */
+	--bg-color: #f4f5f7;
+	--bg-noise: none; /* Without gradients */
+	--bg-elevated: #f5f5f5;
+	--bg-elevated-soft: #f7f7fb;
+	--hero-bg: #eceff3; /* Plain gray background */
+	--text-color: #111217;
+	--muted-color: #55596a;
+	--border-subtle: rgba(15, 23, 42, 0.08);
+	--border-strong: rgba(15, 23, 42, 0.16);
+	--code-bg: rgba(0, 0, 0, 0.03);
+	--code-border: rgba(0, 0, 0, 0.07);
+	--chip-bg: rgba(var(--accent-color-rgb), 0.08);
+	--chip-border: rgba(var(--accent-color-rgb), 0.35);
+	--divider-color: rgba(15, 23, 42, 0.08);
+	--link-underline: rgba(0, 0, 0, 0.35);
+	--logo-bg: #ffffff;
+	
+	/*==== GRADIENT ====*/
+	/*==== Primary colors ====*/
+	--accent-start: color(display-p3 0.689 0.875 0);
+	--accent-end:  color(display-p3 0.068 0.595 0.517);
+	/*==== Secondary colors (muted) ====*/
+	--accent-dimmed-start: color-mix(in srgb, var(--accent-start) 75%, var(--text-color) 25%);
+	--accent-dimmed-end: color-mix(in srgb, var(--accent-end) 75%, var(--text-color) 25%);
+	/*==== Received gradients ====*/
+	/*----- Regular -----*/
+	--accent-gradient-horizontal: linear-gradient(90deg, var(--accent-start) 0%, var(--accent-end) 100%);
+	/*----- Muted -----*/
+	--accent-dimmed-gradient-horizontal: linear-gradient(90deg, var(--accent-dimmed-start) 0%, var(--accent-dimmed-end) 100%);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #050608;
-    --text-color: #f5f5f5;
-    --muted-color: #c7c7c7;
-  }
+	:root {
+		/* In the dark theme, the accent is still bright */
+		--accent-color: #5ff4c5;
+		--accent-color-rgb: 95, 244, 197;
+
+		--bg-color: #050608;
+		--bg-noise: none;
+		--bg-elevated: #0b0c10;
+		--bg-elevated-soft: #0f1117;
+		--hero-bg: #11141b;
+		--text-color: #f5f5f5;
+		--muted-color: #a7acc3;
+		--border-subtle: rgba(148, 163, 184, 0.32);
+		--border-strong: rgba(148, 163, 184, 0.45);
+		--shadow-soft: 0 26px 70px rgba(0, 0, 0, 0.85);
+		--code-bg: rgba(15, 23, 42, 0.9);
+		--code-border: rgba(148, 163, 184, 0.45);
+		--chip-bg: rgba(15, 23, 42, 0.95);
+		--chip-border: rgba(var(--accent-color-rgb), 0.7);
+		--divider-color: rgba(148, 163, 184, 0.22);
+		--link-underline: rgba(148, 163, 184, 0.9);
+		--logo-bg: #000000;
+		
+		/*==== GRADIENT ====*/
+		/*==== Primary colors ====*/
+		--accent-start: color(display-p3 0.848 1 0.28);
+		--accent-end: color(display-p3 0 0.891 1);    
+		/*==== Secondary colors (muted) ====*/
+		--accent-dimmed-start: color-mix(in srgb, var(--accent-start) 66%, var(--bg-color) 34%);
+		--accent-dimmed-end: color-mix(in srgb, var(--accent-end) 66%, var(--bg-color) 34%);
+		/*==== Received gradients ====*/
+		/*----- Regular -----*/
+		--accent-gradient-horizontal: linear-gradient(90deg, var(--accent-start) 0%, var(--accent-end) 100%);
+ 	 	/*----- Muted -----*/
+		--accent-dimmed-gradient-horizontal: linear-gradient(90deg, var(--accent-dimmed-start) 0%, var(--accent-dimmed-end) 100%);
+	}
 }
 
-* {
-  box-sizing: border-box;
+/* On the desktop, we slightly increase the padding, the geometry is preserved */
+@media (min-width: 720px) {
+	:root {
+		--card-padding: 26px;
+	}
+}
+
+/* Global layout */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  background: var(--bg-color);
-  color: var(--text-color);
-  line-height: 1.6;
-  padding: 0;
+	margin: 0;
+	min-height: 100vh;
+	background-color: var(--bg-color);
+	background-image: var(--bg-noise);
+	color: var(--text-color);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+	line-height: 1.6;
+	padding: 24px 12px 40px;
+	display: flex;
+	justify-content: center;
 }
+
+.app-shell {
+	width: 100%;
+	max-width: 950px;
+}
+
+/* Header */
 
 header {
-  padding: 32px 16px 0;
-  text-align: center;
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 16px;
+	padding: 10px 24px 10px 10px;
+	border-radius: 50px 20px 20px 50px;
+	background-color: var(--bg-elevated);
+	backdrop-filter: blur(26px);
+	-webkit-backdrop-filter: blur(26px);
+	max-width: 620px;
 }
 
-header h1 {
-  margin: 0 0 8px;
-  font-size: 32px;
-  letter-spacing: 0.02em;
+/** Border gradient */
+header::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	padding: 1px; /* Frame thickness */
+	border-radius: inherit;
+	background: var(--accent-gradient-horizontal);
+	/* We leave only the "ring", and the center transparent */
+	-webkit-mask:
+		linear-gradient(#fff 0 0) content-box,
+		linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+					mask-composite: exclude;
+	pointer-events: none;
 }
 
-header p {
-  margin: 0;
-  color: var(--muted-color);
+.header-left {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
 }
+
+.logo-pill {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px; 
+	height: 44px;
+	border-radius: 999px;
+	position: relative;
+}
+
+.logo-pill::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	padding: 1px; /* Frame thickness */
+	border-radius: inherit;
+	background: var(--accent-dimmed-gradient-horizontal);
+	-webkit-mask:
+		linear-gradient(#fff 0 0) content-box,
+		linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+					mask-composite: exclude;
+	pointer-events: none;
+	opacity: 0.25; /* Translucent frame */
+}
+
+.logo-pill img {
+	width: 32px;
+	height: 32px;
+	display: block;
+}
+
+/* Text in the header */
+
+.header-text-block {
+	display: flex;
+	flex-direction: column;
+	line-height: 1.2;
+}
+
+.header-title-text {
+	font-size: 16px;
+	font-weight: 620;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	
+	/** gradient for text color */
+	background: var(--accent-gradient-horizontal);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent; /* makes the glyphs show the bg */
+}
+
+.header-subtitle-text {
+	font-size: 12px;
+	/* gradient for text color */
+	background: var(--accent-dimmed-gradient-horizontal);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent; /* makes the glyphs show the bg */
+}
+
+/* Main content card */
 
 main {
-  max-width: 900px;
-  margin: 32px auto 64px;
-  padding: 0 16px;
+	margin-top: 20px;
 }
 
-h2 {
-  border-left: 6px solid var(--accent-color);
-  padding-left: 10px;
-  margin-top: 36px;
-  margin-bottom: 16px;
-  font-size: 24px;
+.content-card {
+	background: var(--bg-elevated-soft);
+	border-radius: var(--card-radius);
+	border: 1px solid var(--border-subtle);
+	box-shadow: var(--shadow-soft);
+	padding: var(--card-padding);
+	backdrop-filter: blur(18px);
+	-webkit-backdrop-filter: blur(18px);
 }
+
+/* Hero */
+
+.hero {
+	/* Radii: external minus padding on X, the same on the mobile and desktop */
+	border-radius:
+		calc(var(--card-radius) - var(--card-padding))
+		calc(var(--card-radius) - var(--card-padding))
+		20px 20px;
+	padding: 12px 18px;
+	margin-bottom: 18px;
+	background-color: var(--hero-bg); /* Plain gray, without a gradient */
+	border: 1px solid rgba(var(--accent-color-rgb), 0.4);
+}
+
+.hero-title {
+	margin: 0 0 6px;
+	font-size: 26px;
+	letter-spacing: 0.01em;
+}
+
+.hero-subtitle {
+	margin: 0;
+	color: var(--muted-color);
+	font-size: 14px;
+}
+
+/* Sections */
+
+.section {
+	padding: 4px 18px 4px; 
+	border-radius: 18px;
+	border: 1px solid transparent;
+	transition: border-color 160ms ease-out, background-color 160ms ease-out;
+}
+
+.section:not(:last-of-type) {
+	margin-bottom: 4px;
+}
+
+.section:hover {
+	border-color: rgba(var(--accent-color-rgb), 0.42);
+	background-color: rgba(15, 23, 42, 0.06);
+}
+
+.section-header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 6px;
+	margin-left: -10px; /* Easy shift for tag and title centering */
+}
+
+/* Pills (Intro / Origin story / Now) */
+
+.section-tag {
+	padding: 4px 10px;
+	border-radius: 999px;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.11em;
+	color: var(--muted-color);
+	border: 1px solid rgba(148, 163, 184, 0.5);
+	background-color: rgba(15, 23, 42, 0.06);
+	line-height: 1.2;
+	transition:
+		border-color 140ms ease-out,
+		background-color 140ms ease-out,
+		transform 140ms ease-out;
+}
+
+.section-tag:hover {
+	border-color: rgba(var(--accent-color-rgb), 0.9);
+	background-color: rgba(var(--accent-color-rgb), 0.12);
+	transform: translateY(-0.5px);
+}
+
+.section h2 {
+	margin: 0;
+	font-size: 20px;
+}
+
+/* Text elements */
 
 p {
-  margin: 0 0 16px;
+	margin: 0 0 10px;
+	font-size: 15px;
 }
 
 ul {
-  margin: 0 0 16px 24px;
-  padding: 0;
+	margin: 0 0 10px 20px;
+	padding: 0;
+	font-size: 15px;
 }
 
 li {
-  margin: 6px 0;
+	margin: 4px 0;
 }
 
 hr {
-  border: 0;
-  border-top: 1px solid rgba(var(--accent-color-rgb), 0.3);
-  margin: 28px 0;
+	border: 0;
+	border-top: 1px dashed var(--divider-color);
+	margin: 16px 0 12px;
 }
 
+/* Links */
+
 a {
-  color: var(--text-color);
-  text-decoration-color: var(--accent-color);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
+	color: var(--text-color);
+	text-decoration-color: var(--link-underline);
+	text-decoration-thickness: 2px;
+	text-underline-offset: 4px;
+	transition: color 140ms ease-out, text-decoration-color 140ms ease-out;
 }
 
 a:hover {
-  color: var(--accent-color);
+	color: rgb(var(--accent-color-rgb));
+	text-decoration-color: rgba(var(--accent-color-rgb), 1);
 }
 
-code, tt {
-  display: inline;
-  padding: 0.2em 0.5em;
-  border: 1px solid var(--accent-color);
-  border-radius: 4px;
-  background: rgba(var(--accent-color-rgb), 0.1);
-  color: var(--text-color);
-  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 0.94em;
+/* Code / chips — Basic neutral style */
+
+code,
+tt {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 0.15em 0.6em;
+	border-radius: 999px;
+	border: 1px solid var(--code-border);
+	background-color: var(--code-bg);
+	color: var(--text-color);
+	font-family: "SF Mono", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-size: 0.9em;
+	white-space: nowrap;
 }
+
+/* Hero capsules and lower block - accent style */
+
+.code-accent code {
+	border-color: var(--chip-border);
+	background-color: var(--chip-bg);
+	color: color-mix(in srgb, rgb(var(--accent-color-rgb)) 65%, var(--text-color));
+}
+
+/* Blockquote */
 
 blockquote {
-  margin: 0 0 16px;
-  padding-left: 16px;
-  border-left: 4px solid var(--accent-color);
-  font-style: italic;
-  color: var(--muted-color);
+	margin: 8px 0 10px;
+	padding: 8px 12px 8px 12px;
+	border-radius: 14px;
+	background-color: rgba(15, 23, 42, 0.07);
+	border: 1px solid var(--border-subtle);
+	font-style: italic;
+	color: var(--muted-color);
 }
 
+/* Small helpers */
+
 .section-lead {
-  color: var(--muted-color);
-  font-style: italic;
-  margin-bottom: 12px;
+	color: var(--muted-color);
+	font-style: italic;
+	margin-bottom: 8px;
+	font-size: 14px;
+}
+
+/* Responsive tweaks */
+
+@media (min-width: 720px) {
+	body {
+		padding: 32px 24px 48px;
+	}
+	.hero-title {
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 480px) {
+	header {
+		padding-inline: 12px;
+		max-width: 100%;
+	}
+	body {
+		padding-inline: 12px;
+	}
 }
 </style>
 </head>
 <body>
-  <header>
-    <h1>taxiboatdriver</h1>
-    <p class="section-lead">Standalone preview for local development</p>
-  </header>
-  <main>
-    <h2>Hello, I’m Serhii – allegedly a taxiboatdriver</h2>
-    <p>Also known as <code>qizh</code>, <code>;,;</code>, or <code>taxiboatdriver</code> — despite having driven exactly zero taxi boats. So far.</p>
-    <p>I design and build apps for Apple platforms, automate my house a bit too much, and live on a tropical island questioning all my life choices in a very structured, Swift-like manner.</p>
+	<div class="app-shell">
+		<header>
+			<div class="header-left">
+				<div class="logo-pill">
+					<img src="taxiboatdriver-icon.svg" alt="taxiboatdriver logo">
+				</div>
+				<div class="header-text-block">
+					<div class="header-title-text">TAXIBOATDRIVER</div>
+					<div class="header-subtitle-text">Swift, islands &amp; slightly overengineered life</div>
+				</div>
+			</div>
+		</header>
 
-    <hr>
+		<main>
+			<div class="content-card">
+				<section class="hero code-accent">
+					<h1 class="hero-title">Hello, I’m Serhii – allegedly a taxiboatdriver</h1>
+					<p class="hero-subtitle">
+						Also known as <code>qizh</code>, <code>;,;</code>, or <code>taxiboatdriver</code> —
+						despite having driven exactly zero taxi boats. So far.
+					</p>
+				</section>
 
-    <h2>Where I came from</h2>
-    <p>I was born and raised in Kyiv, Ukraine, back when floppy disks were still a thing and “saving your progress” meant both in games and in life.</p>
-    <p>I spent about 30 years in Kyiv:</p>
-    <ul>
-      <li>Learned to love tech, computers, and all things that can be taken apart and sometimes even assembled back.</li>
-      <li>Developed a long-term relationship with logic, science, and asking “but why exactly?” about everything.</li>
-      <li>Survived enough winters to confidently say: I’ve done my time.</li>
-    </ul>
-    <p>Kyiv is still “home” in the deep-brain firmware kind of way, even if my IP address strongly disagrees.</p>
+				<section class="section">
+					<div class="section-header">
+						<span class="section-tag">Intro</span>
+						<h2>Who I am</h2>
+					</div>
+					<p>I design and build apps for Apple platforms, automate my house a bit too much, and live on a tropical island questioning all my life choices in a very structured, Swift-like manner.</p>
+				</section>
 
-    <hr>
+				<hr>
 
-    <h2>Where I live now</h2>
-    <p>For the last <strong>11 years and 9 days</strong> (yes, I did the math), I’ve been living on <strong>Koh Phangan, Thailand</strong> — a tropical island famous for:</p>
-    <ul>
-      <li>beaches,</li>
-      <li>parties,</li>
-      <li>and people who said “I’ll stay for a month” and forgot to leave.</li>
-    </ul>
-    <p>I am one of those people.</p>
-    <p>These days I live somewhere between jungle, sea, and Wi-Fi coverage, sharing the place with:</p>
-    <ul>
-      <li>a very opinionated Siamese cat,</li>
-      <li>a sugar glider with parkour ambitions,</li>
-      <li>and fish who rent a huge outdoor bowl in exchange for eating mosquito larvae.</li>
-    </ul>
+				<section class="section">
+					<div class="section-header">
+						<span class="section-tag">Origin story</span>
+						<h2>Where I came from</h2>
+					</div>
+					<p>I was born and raised in Kyiv, Ukraine, back when floppy disks were still a thing and “saving your progress” meant both in games and in life.</p>
+					<p>I spent about 30 years in Kyiv:</p>
+					<ul>
+						<li>Learned to love tech, computers, and all things that can be taken apart and sometimes even assembled back.</li>
+						<li>Developed a long-term relationship with logic, science, and asking “but why exactly?” about everything.</li>
+						<li>Survived enough winters to confidently say: I’ve done my time.</li>
+					</ul>
+					<p>Kyiv is still “home” in the deep-brain firmware kind of way, even if my IP address strongly disagrees.</p>
+				</section>
 
-    <hr>
+				<hr>
 
-    <h2>What I do for a living</h2>
-    <p>I’m a <strong>Swift / SwiftUI developer</strong> building apps for:</p>
-    <ul>
-      <li><strong>iOS</strong></li>
-      <li><strong>iPadOS</strong></li>
-      <li><strong>macOS</strong> (and occasionally eyeing visionOS like, "one day…")</li>
-    </ul>
-    <p>What I actually do:</p>
-    <ul>
-      <li>Architect and implement apps with a focus on:
-        <ul>
-          <li>clean, modern Swift,</li>
-          <li>SwiftUI-first UI,</li>
-          <li>new platform features (yes, even the beta ones),</li>
-          <li>and code that future-me hopefully won’t hate.</li>
-        </ul>
-      </li>
-      <li>Play with:
-        <ul>
-          <li>Swift 6+ features, macros, and all the shiny new toys.</li>
-          <li>Async stuff, structured concurrency, and polite fights with the compiler.</li>
-        </ul>
-      </li>
-      <li>Integrate:
-        <ul>
-          <li>AI backends,</li>
-          <li>APIs,</li>
-          <li>and whatever else someone decided “will only take a couple of hours” (it won’t).</li>
-        </ul>
-      </li>
-    </ul>
-    <p><strong>Short version:</strong></p>
-    <blockquote>
-      I turn coffee, bug reports, and design docs into SwiftUI views and questionable TODO comments.
-    </blockquote>
+				<section class="section">
+					<div class="section-header">
+						<span class="section-tag">Now</span>
+						<h2>Where I live now</h2>
+					</div>
+					<p>For the last <strong>11 years and 9 days</strong> (yes, I did the math), I’ve been living on <strong>Koh Phangan, Thailand</strong> — a tropical island famous for:</p>
+					<ul>
+						<li>beaches,</li>
+						<li>parties,</li>
+						<li>and people who said “I’ll stay for a month” and forgot to leave.</li>
+					</ul>
+					<p>I am one of those people.</p>
+					<p>These days I live somewhere between jungle, sea, and Wi-Fi coverage, sharing the place with:</p>
+					<ul>
+						<li>a very opinionated Siamese cat,</li>
+						<li>a sugar glider with parkour ambitions,</li>
+						<li>and fish who rent a huge outdoor bowl in exchange for eating mosquito larvae.</li>
+					</ul>
+				</section>
 
-    <hr>
+				<hr>
 
-    <h2>What I do for fun</h2>
-    <p>When I’m not arguing with Xcode, I:</p>
-    <ul>
-      <li>
-        <strong>Photograph and film life on the island</strong><br>
-        Parties, lights, people, random details — then spend an unreasonable amount of time syncing it perfectly to music in video edits.
-      </li>
-      <li>
-        <strong>Over-engineer my smart home</strong><br>
-        Home Assistant, sensors, dashboards, cameras, automations — if something in the house can be automated, it probably already is or is on a YAML todo list.
-      </li>
-      <li>
-        <strong>Design things that don't exist yet</strong><br>
-        Including:
-        <ul>
-          <li>UI concepts,</li>
-          <li>playful ideas for <strong>women's underwear design</strong>,</li>
-          <li>and other "one day I'll actually produce this" concepts.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Dive into psychology and systems</strong><br>
-        I enjoy picking apart:
-        <ul>
-          <li>human behavior,</li>
-          <li>motivation,</li>
-          <li>interactions,</li>
-          <li>and how all of that maps to something like a mental state machine with too many edge cases.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Play and tinker with tech &amp; AI</strong><br>
-        New tools, new models, new frameworks, new ways to make my life slightly easier and my setups significantly more complicated.
-      </li>
-    </ul>
+				<section class="section">
+					<div class="section-header">
+						<span class="section-tag">Work</span>
+						<h2>What I do for a living</h2>
+					</div>
+					<p>I’m a <strong>Swift / SwiftUI developer</strong> building apps for:</p>
+					<ul>
+						<li><strong>iOS</strong></li>
+						<li><strong>iPadOS</strong></li>
+						<li><strong>macOS</strong> (and occasionally eyeing visionOS like, "one day…")</li>
+					</ul>
+					<p>What I actually do:</p>
+					<ul>
+						<li>Architect and implement apps with a focus on:
+							<ul>
+								<li>clean, modern Swift,</li>
+								<li>SwiftUI-first UI,</li>
+								<li>new platform features (yes, even the beta ones),</li>
+								<li>and code that future-me hopefully won’t hate.</li>
+							</ul>
+						</li>
+						<li>Play with:
+							<ul>
+								<li>Swift 6+ features, macros, and all the shiny new toys.</li>
+								<li>Async stuff, structured concurrency, and polite fights with the compiler.</li>
+							</ul>
+						</li>
+						<li>Integrate:
+							<ul>
+								<li>AI backends,</li>
+								<li>APIs,</li>
+								<li>and whatever else someone decided “will only take a couple of hours” (it won’t).</li>
+							</ul>
+						</li>
+					</ul>
+					<p><strong>Short version:</strong></p>
+					<blockquote>
+						I turn coffee, bug reports, and design docs into SwiftUI views and questionable TODO comments.
+					</blockquote>
+				</section>
 
-    <hr>
+				<hr>
 
-    <h2>Hobbies and interests</h2>
-    <p>A non-exhaustive list of things my brain refuses to let go of:</p>
-    <ul>
-      <li><strong>Technology &amp; computers</strong> — from low-level details to UX.</li>
-      <li><strong>Swift, SwiftUI &amp; app architecture</strong> — because one framework is never enough.</li>
-      <li><strong>Psychology</strong> — especially how people think, decide, and get stuck.</li>
-      <li><strong>Physics &amp; space</strong> — because why not also worry about cosmic scales.</li>
-      <li><strong>Genetics &amp; neuroscience (as a curious outsider)</strong> — understanding how much of us is wiring vs. software.</li>
-      <li><strong>Electronics &amp; gadgets</strong> — things that click, blink, and occasionally explode (metaphorically).</li>
-      <li><strong>Parties &amp; music</strong> — electronic, dance, and everything that feels good at 3 AM on an island.</li>
-      <li><strong>Photography &amp; videography</strong> — capturing moments, then obsessing over color grading.</li>
-    </ul>
+				<section class="section">
+					<div class="section-header">
+						<span class="section-tag">Off-duty</span>
+						<h2>What I do for fun</h2>
+					</div>
+					<p>When I’m not arguing with Xcode, I:</p>
+					<ul>
+						<li>
+							<strong>Photograph and film life on the island</strong><br>
+							Parties, lights, people, random details — then spend an unreasonable amount of time syncing it perfectly to music in video edits.
+						</li>
+						<li>
+							<strong>Over-engineer my smart home</strong><br>
+							Home Assistant, sensors, dashboards, cameras, automations — if something in the house can be automated, it probably already is or is on a YAML todo list.
+						</li>
+						<li>
+							<strong>Design things that don't exist yet</strong><br>
+							Including:
+							<ul>
+								<li>UI concepts,</li>
+								<li>playful ideas for <strong>women's underwear design</strong>,</li>
+								<li>and other "one day I'll actually produce this" concepts.</li>
+							</ul>
+						</li>
+						<li>
+							<strong>Dive into psychology and systems</strong><br>
+							I enjoy picking apart:
+							<ul>
+								<li>human behavior,</li>
+								<li>motivation,</li>
+								<li>interactions,</li>
+								<li>and how all of that maps to something like a mental state machine with too many edge cases.</li>
+							</ul>
+						</li>
+						<li>
+							<strong>Play and tinker with tech &amp; AI</strong><br>
+							New tools, new models, new frameworks, new ways to make my life slightly easier and my setups significantly more complicated.
+						</li>
+					</ul>
+				</section>
 
-    <hr>
+				<hr>
 
-    <h2>Languages I speak</h2>
-    <p>I live in one country, was born in another, and work mostly in a third language, so my vocal cords run a small multilingual startup.</p>
-    <ul>
-      <li><strong>Ukrainian</strong> – my native firmware. The language of roots, with maximum depth and minimum user interface.</li>
-      <li><strong>russian</strong> – also my native. Often used for personal conversations, long messages, and detailed overthinking with extra nuance.</li>
-      <li><strong>English</strong> – fluent. Primary language for work, documentation, development, and arguing with compilers, APIs, and error messages.</li>
-    </ul>
-    <p>I actively switch between these depending on context:</p>
-    <ul>
-      <li>English for apps, code, and tech discussions.</li>
-      <li>russian for life, feelings, and the kind of topics that don’t belong in a commit message.</li>
-    </ul>
+				<section class="section">
+					<div class="section-header">
+						<span class="section-tag">Interests</span>
+						<h2>Hobbies and interests</h2>
+					</div>
+					<p>A non-exhaustive list of things my brain refuses to let go of:</p>
+					<ul>
+						<li><strong>Technology &amp; computers</strong> — from low-level details to UX.</li>
+						<li><strong>Swift, SwiftUI &amp; app architecture</strong> — because one framework is never enough.</li>
+						<li><strong>Psychology</strong> — especially how people think, decide, and get stuck.</li>
+						<li><strong>Physics &amp; space</strong> — because why not also worry about cosmic scales.</li>
+						<li><strong>Genetics &amp; neuroscience (as a curious outsider)</strong> — understanding how much of us is wiring vs. software.</li>
+						<li><strong>Electronics &amp; gadgets</strong> — things that click, blink, and occasionally explode (metaphorically).</li>
+						<li><strong>Parties &amp; music</strong> — electronic, dance, and everything that feels good at 3 AM on an island.</li>
+						<li><strong>Photography &amp; videography</strong> — capturing moments, then obsessing over color grading.</li>
+					</ul>
+				</section>
 
-    <hr>
+				<hr>
 
-    <h2>Why “taxiboatdriver”?</h2>
-    <p>Because:</p>
-    <ul>
-      <li>It’s slightly absurd.</li>
-      <li>It sounds like a guy who might pick you up from a pier at 3 AM.</li>
-      <li>It’s one of those jobs even Thai people can't apply for.</li>
-    </ul>
-    <p>Also, if someone ever yells “taxi boat!” on the beach, I can pretend it’s free brand activation.</p>
+				<section class="section code-accent">
+					<div class="section-header">
+						<span class="section-tag">Languages</span>
+						<h2>Languages I speak</h2>
+					</div>
+					<p>I live in one country, was born in another, and work mostly in a third language, so my vocal cords run a small multilingual startup.</p>
+					<ul>
+						<li><code>Ukrainian</code> – my native firmware. The language of roots, with maximum depth and minimum user interface.</li>
+						<li><code>russian</code> – also my native. Often used for personal conversations, long messages, and detailed overthinking with extra nuance.</li>
+						<li><code>English</code> – fluent. Primary language for work, documentation, development, and arguing with compilers, APIs, and error messages.</li>
+					</ul>
+					<p>I actively switch between these depending on context:</p>
+					<ul>
+						<li>English for apps, code, and tech discussions.</li>
+						<li>russian for life, feelings, and the kind of topics that don’t belong in a commit message.</li>
+					</ul>
+				</section>
 
-    <hr>
+				<hr>
 
-    <h2>If you’re here for something practical</h2>
-    <p>You might want to:</p>
-    <ul>
-      <li><strong>Talk about apps</strong>
-        <ul>
-          <li>Need an app for Apple platforms?</li>
-          <li>Want to modernize a codebase with SwiftUI?</li>
-          <li>Curious how to wire AI into your app without burning it down?</li>
-        </ul>
-      </li>
-      <li><strong>Talk about automation</strong>
-        <ul>
-          <li>Smart home setups,</li>
-          <li>Home Assistant,</li>
-          <li>Apple/HomeKit, Matter, Thread, and Zigbee integration,</li>
-          <li>making your lights, sensors, and speakers behave like a tiny obedient orchestra.</li>
-        </ul>
-      </li>
-      <li><strong>Talk about anything from the list above</strong><br>Tech, space &amp; physics, design, AI, island life, psychology, or my favorite: “how did you end up living there for over 11 years??”.</li>
-    </ul>
+				<section class="section">
+					<div class="section-header">
+						<span class="section-tag">Name</span>
+						<h2>Why “taxiboatdriver”?</h2>
+					</div>
+					<p>Because:</p>
+					<ul>
+						<li>It’s slightly absurd.</li>
+						<li>It sounds like a guy who might pick you up from a pier at 3 AM.</li>
+						<li>It’s one of those jobs even Thai people can't apply for.</li>
+					</ul>
+					<p>Also, if someone ever yells “taxi boat!” on the beach, I can pretend it’s free brand activation.</p>
+				</section>
 
-    <hr>
+				<hr>
 
-    <h2>Where to find me</h2>
-    <p>Online, you’ll usually see me as:</p>
-    <ul>
-      <li><code>qizh</code></li>
-      <li><code>;,;</code></li>
-      <li><code>taxiboatdriver</code></li>
-    </ul>
-    <p>If you’ve seen these somewhere near Swift, SwiftUI, AI, or smart home discussions — that was probably me.</p>
-    <p>And if you somehow landed here by typing <em>“actual taxi boat driver Koh Phangan”</em> into a search engine:</p>
-    <ul>
-      <li>I can’t take you to another island,</li>
-      <li>but I can help you ship an app.</li>
-    </ul>
-  </main>
+				<section class="section">
+					<div class="section-header">
+						<span class="section-tag">Practical</span>
+						<h2>If you’re here for something practical</h2>
+					</div>
+					<p>You might want to:</p>
+					<ul>
+						<li><strong>Talk about apps</strong>
+							<ul>
+								<li>Need an app for Apple platforms?</li>
+								<li>Want to modernize a codebase with SwiftUI?</li>
+								<li>Curious how to wire AI into your app without burning it down?</li>
+							</ul>
+						</li>
+						<li><strong>Talk about automation</strong>
+							<ul>
+								<li>Smart home setups,</li>
+								<li>Home Assistant,</li>
+								<li>Apple/HomeKit, Matter, Thread, and Zigbee integration,</li>
+								<li>making your lights, sensors, and speakers behave like a tiny obedient orchestra.</li>
+							</ul>
+						</li>
+						<li><strong>Talk about anything from the list above</strong><br>
+							Tech, space &amp; physics, design, AI, island life, psychology, or my favorite: “how did you end up living there for over 11 years??”.
+						</li>
+					</ul>
+				</section>
+
+				<hr>
+
+				<section class="section code-accent">
+					<div class="section-header">
+						<span class="section-tag">Contacts</span>
+						<h2>Where to find me</h2>
+					</div>
+					<p>Online, you’ll usually see me as:</p>
+					<ul>
+						<li><code>qizh</code></li>
+						<li><code>;,;</code></li>
+						<li><code>taxiboatdriver</code></li>
+					</ul>
+					<p>If you’ve seen these somewhere near Swift, SwiftUI, AI, or smart home discussions — that was probably me.</p>
+					<p>And if you somehow landed here by typing <em>“actual taxi boat driver Koh Phangan”</em> into a search engine:</p>
+					<ul>
+						<li>I can’t take you to another island,</li>
+						<li>but I can help you ship an app.</li>
+					</ul>
+				</section>
+			</div>
+		</main>
+	</div>
 </body>
 </html>
