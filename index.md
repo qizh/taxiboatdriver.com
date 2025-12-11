@@ -1,6 +1,6 @@
 <section class="hero code-accent" markdown="1">
 
-# Hello, I'm Serhii – allegedly a taxiboatdriver
+# Hello, I’m Serhii
 {: .hero-title}
 
 Also known as `qizh`, `;,;`, or `taxiboatdriver` —
@@ -37,7 +37,7 @@ I spent about 30 years in Kyiv:
 
 - Learned to love tech, computers, and all things that can be taken apart and sometimes even assembled back.
 - Developed a long-term relationship with logic, science, and asking “but why exactly?” about everything.
-- Survived enough winters to confidently say: I've done my time.
+- Survived enough winters to confidently say: I’ve done my time.
 
 Kyiv is still “home” in the deep-brain firmware kind of way, even if my IP address strongly disagrees.
 
@@ -53,11 +53,11 @@ Kyiv is still “home” in the deep-brain firmware kind of way, even if my IP a
 ## Where I live now
 </div>
 
-For the last **11 years and 9 days** (yes, I did the math), I've been living on **Koh Phangan, Thailand** — a tropical island famous for:
+For the last **11 years and 9 days** (yes, I did the math), I’ve been living on **Koh Phangan, Thailand** — a tropical island famous for:
 
 - beaches,
 - parties,
-- and people who said “I'll stay for a month” and forgot to leave.
+- and people who said “I’ll stay for a month” and forgot to leave.
 
 I am one of those people.
 
@@ -79,11 +79,11 @@ These days I live somewhere between jungle, sea, and Wi-Fi coverage, sharing the
 ## What I do for a living
 </div>
 
-I'm a **Swift / SwiftUI developer** building apps for:
+I’m a **Swift / SwiftUI developer** building apps for:
 
 - **iOS**
 - **iPadOS**
-- **macOS** (and occasionally eyeing visionOS like, “one day…”)
+- **macOS** (and occasionally eyeing **visionOS** like, “one day…”)
 
 What I actually do:
 
@@ -91,7 +91,7 @@ What I actually do:
   - clean, modern Swift,
   - SwiftUI-first UI,
   - new platform features (yes, even the beta ones),
-  - and code that future-me hopefully won't hate.
+  - and code that future-me hopefully won’t hate.
 - Play with:
   - Swift 6+ features, macros, and all the shiny new toys.
   - Async stuff, structured concurrency, and polite fights with the compiler.
@@ -116,7 +116,7 @@ What I actually do:
 ## What I do for fun
 </div>
 
-When I'm not arguing with Xcode, I:
+When I’m not arguing with Xcode, I:
 
 - **Photograph and film life on the island**  
   Parties, lights, people, random details — then spend an unreasonable amount of time syncing it perfectly to music in video edits.
@@ -124,11 +124,11 @@ When I'm not arguing with Xcode, I:
 - **Over-engineer my smart home**  
   Home Assistant, sensors, dashboards, cameras, automations — if something in the house can be automated, it probably already is or is on a YAML todo list.
 
-- **Design things that don't exist yet**  
+- **Design things that don’t exist yet**  
   Including:
   - UI concepts,
-  - playful ideas for **women's underwear design**,
-  - and other “one day I'll actually produce this” concepts.
+  - playful ideas for **women’s underwear design**,
+  - and other “one day I’ll actually produce this” concepts.
 
 - **Dive into psychology and systems**  
   I enjoy picking apart:
@@ -181,9 +181,9 @@ I live in one country, was born in another, and work mostly in a third language,
 - `russian` – also my native. Often used for personal conversations, long messages, and detailed overthinking with extra nuance.
 - `English` – fluent. Primary language for work, documentation, development, and arguing with compilers, APIs, and error messages.
 
-I actively switch between these depending on context:
+My brain runs a two-language load balancer:
 
-- English for apps, code, and tech discussions.
+- `English` for apps, code, serious tech talk, and surviving conversations with the international crowd orbiting me on the island.
 - russian for life, feelings, and the kind of topics that don't belong in a commit message.
 
 </section>
@@ -200,11 +200,11 @@ I actively switch between these depending on context:
 
 Because:
 
-- It's slightly absurd.
+- It’s slightly absurd.
 - It sounds like a guy who might pick you up from a pier at 3 AM.
-- It's one of those jobs even Thai people can't apply for.
+- It’s one of those jobs even Thai people can’t apply for.
 
-Also, if someone ever yells “taxi boat!” on the beach, I can pretend it's free brand activation.
+Also, if someone ever yells “taxi boat!” on the beach, I can pretend it’s free brand activation.
 
 </section>
 
@@ -246,17 +246,17 @@ You might want to:
 ## Where to find me
 </div>
 
-Online, you'll usually see me as:
+Online, you’ll usually see me as:
 
 - `qizh`
 - `;,;`
 - `taxiboatdriver`
 
-If you've seen these somewhere near Swift, SwiftUI, AI, or smart home discussions — that was probably me.
+If you’ve seen these somewhere near Swift, SwiftUI, AI, or smart home discussions — that was probably me.
 
 And if you somehow landed here by typing *“actual taxi boat driver Koh Phangan”* into a search engine:
 
-- I can't take you to another island,
+- I can’t take you to another island,
 - but I can help you ship an app.
 
 </section>
