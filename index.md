@@ -31,15 +31,15 @@ I design and build apps for Apple platforms, automate my house a bit too much, a
 ## Where I came from
 </div>
 
-I was born and raised in Kyiv, Ukraine, back when floppy disks were still a thing and "saving your progress" meant both in games and in life.
+I was born and raised in Kyiv, Ukraine, back when floppy disks were still a thing and “saving your progress” meant both in games and in life.
 
 I spent about 30 years in Kyiv:
 
 - Learned to love tech, computers, and all things that can be taken apart and sometimes even assembled back.
-- Developed a long-term relationship with logic, science, and asking "but why exactly?" about everything.
+- Developed a long-term relationship with logic, science, and asking “but why exactly?” about everything.
 - Survived enough winters to confidently say: I've done my time.
 
-Kyiv is still "home" in the deep-brain firmware kind of way, even if my IP address strongly disagrees.
+Kyiv is still “home” in the deep-brain firmware kind of way, even if my IP address strongly disagrees.
 
 </section>
 
@@ -57,7 +57,7 @@ For the last **11 years and 9 days** (yes, I did the math), I've been living on 
 
 - beaches,
 - parties,
-- and people who said "I'll stay for a month" and forgot to leave.
+- and people who said “I'll stay for a month” and forgot to leave.
 
 I am one of those people.
 
@@ -83,7 +83,7 @@ I'm a **Swift / SwiftUI developer** building apps for:
 
 - **iOS**
 - **iPadOS**
-- **macOS** (and occasionally eyeing visionOS like, "one day…")
+- **macOS** (and occasionally eyeing visionOS like, “one day…”)
 
 What I actually do:
 
@@ -98,7 +98,7 @@ What I actually do:
 - Integrate:
   - AI backends,
   - APIs,
-  - and whatever else someone decided "will only take a couple of hours" (it won't).
+  - and whatever else someone decided “will only take a couple of hours” (it won't).
 
 **Short version:**
 
@@ -128,7 +128,7 @@ When I'm not arguing with Xcode, I:
   Including:
   - UI concepts,
   - playful ideas for **women's underwear design**,
-  - and other "one day I'll actually produce this" concepts.
+  - and other “one day I'll actually produce this” concepts.
 
 - **Dive into psychology and systems**  
   I enjoy picking apart:
@@ -195,7 +195,7 @@ I actively switch between these depending on context:
 <div class="section-header" markdown="1">
 <span class="section-tag">Name</span>
 
-## Why "taxiboatdriver"?
+## Why “taxiboatdriver”?
 </div>
 
 Because:
@@ -204,7 +204,7 @@ Because:
 - It sounds like a guy who might pick you up from a pier at 3 AM.
 - It's one of those jobs even Thai people can't apply for.
 
-Also, if someone ever yells "taxi boat!" on the beach, I can pretend it's free brand activation.
+Also, if someone ever yells “taxi boat!” on the beach, I can pretend it's free brand activation.
 
 </section>
 
@@ -232,7 +232,7 @@ You might want to:
   - making your lights, sensors, and speakers behave like a tiny obedient orchestra.
 
 - **Talk about anything from the list above**  
-  Tech, space & physics, design, AI, island life, psychology, or my favorite: "how did you end up living there for over 11 years??".
+  Tech, space & physics, design, AI, island life, psychology, or my favorite: “how did you end up living there for over 11 years??”.
 
 </section>
 
@@ -254,7 +254,7 @@ Online, you'll usually see me as:
 
 If you've seen these somewhere near Swift, SwiftUI, AI, or smart home discussions — that was probably me.
 
-And if you somehow landed here by typing *"actual taxi boat driver Koh Phangan"* into a search engine:
+And if you somehow landed here by typing *“actual taxi boat driver Koh Phangan”* into a search engine:
 
 - I can't take you to another island,
 - but I can help you ship an app.
