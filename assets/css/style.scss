@@ -72,7 +72,7 @@
     /*==== Secondary colors (muted) ====*/
     --accent-dimmed-start: color-mix(in srgb, var(--accent-start) 66%, var(--bg-color) 34%);
     --accent-dimmed-end: color-mix(in srgb, var(--accent-end) 66%, var(--bg-color) 34%);
-    /*==== Received gradients ====*/
+    /*==== Resulting gradients ====*/
     /*----- Regular -----*/
     --accent-gradient-horizontal: linear-gradient(90deg, var(--accent-start) 0%, var(--accent-end) 100%);
     /*----- Muted -----*/
