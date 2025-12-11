@@ -205,7 +205,7 @@ Both themes provide:
 
 | Light | Dark |
 |-------|------|
-| ![Light mode](https://github.com/user-attachments/assets/a260fbce-84d9-4816-b63e-1e107c853155) | ![Dark mode](https://github.com/user-attachments/assets/378a4ad6-7091-4765-9fd6-d199bb530e06) |
+| ![Light mode](https://github.com/user-attachments/assets/2041efbf-78a6-4433-adfc-fcd282649de7) | ![Dark mode](https://github.com/user-attachments/assets/6616558d-ff63-443b-ad5f-972d57ee9147) |
 
 </details>
 
