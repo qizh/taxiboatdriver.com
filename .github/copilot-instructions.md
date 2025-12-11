@@ -36,7 +36,7 @@ taxiboatdriver.com/
 - Screenshots should be made for both `light` and `dark` color schemes and wrapped into a table with two columns named Light and Dark
 - Screenshots table should be wrapped into a `<details><summary>SUMMARY_TEXT</summary> ... </details>`
 - Words like **screenshot**, **previews**, their synonyms or combinations in details summary should be wrapped into `<mark><code>...</code></mark>` like this: <mark><code>screenshots</code></mark>
-  - Just a single `<mark>...<\mark>` usage is preferred for one section (like the summary).
+  - Just a single `<mark>...</mark>` usage is preferred for one section (like the summary).
 
 ### Documentation
 - Keep `README.md` up to date with major changes
