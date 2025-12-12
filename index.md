@@ -1,27 +1,60 @@
-# Hello, I’m Serhii – allegedly a taxiboatdriver
+<section class="hero code-accent" markdown="1">
 
-Also known as `qizh`, `;,;`, or `taxiboatdriver` — despite having driven exactly zero taxi boats. So far.
+# Hello, I’m Serhii
+{: .hero-title}
+
+Also known as `qizh`, `;,;`, or `taxiboatdriver` —
+despite having driven exactly zero taxi boats. So far.
+{: .hero-subtitle}
+
+</section>
+
+<section class="section" markdown="1">
+
+<div class="section-header" markdown="1">
+<span class="section-tag">Intro</span>
+
+## Who I am
+</div>
 
 I design and build apps for Apple platforms, automate my house a bit too much, and live on a tropical island questioning all my life choices in a very structured, Swift-like manner.
 
----
+</section>
+
+<hr>
+
+<section class="section" markdown="1">
+
+<div class="section-header" markdown="1">
+<span class="section-tag">Origin story</span>
 
 ## Where I came from
+</div>
 
 I was born and raised in Kyiv, Ukraine, back when floppy disks were still a thing and “saving your progress” meant both in games and in life.
 
 I spent about 30 years in Kyiv:
+
 - Learned to love tech, computers, and all things that can be taken apart and sometimes even assembled back.
 - Developed a long-term relationship with logic, science, and asking “but why exactly?” about everything.
 - Survived enough winters to confidently say: I’ve done my time.
 
 Kyiv is still “home” in the deep-brain firmware kind of way, even if my IP address strongly disagrees.
 
----
+</section>
+
+<hr>
+
+<section class="section" markdown="1">
+
+<div class="section-header" markdown="1">
+<span class="section-tag">Now</span>
 
 ## Where I live now
+</div>
 
 For the last **11 years and 9 days** (yes, I did the math), I’ve been living on **Koh Phangan, Thailand** — a tropical island famous for:
+
 - beaches,
 - parties,
 - and people who said “I’ll stay for a month” and forgot to leave.
@@ -29,40 +62,59 @@ For the last **11 years and 9 days** (yes, I did the math), I’ve been living o
 I am one of those people.
 
 These days I live somewhere between jungle, sea, and Wi-Fi coverage, sharing the place with:
+
 - a very opinionated Siamese cat,
 - a sugar glider with parkour ambitions,
 - and fish who rent a huge outdoor bowl in exchange for eating mosquito larvae.
 
----
+</section>
+
+<hr>
+
+<section class="section" markdown="1">
+
+<div class="section-header" markdown="1">
+<span class="section-tag">Work</span>
 
 ## What I do for a living
+</div>
 
 I’m a **Swift / SwiftUI developer** building apps for:
+
 - **iOS**
 - **iPadOS**
-- **macOS**
-(and occasionally eyeing visionOS like, “one day…”)
+- **macOS** (and occasionally eyeing **visionOS** like, “one day…”)
 
 What I actually do:
+
 - Architect and implement apps with a focus on:
-	- clean, modern Swift,
-	- SwiftUI-first UI,
-	- new platform features (yes, even the beta ones),
-	- and code that future-me hopefully won’t hate.
+  - clean, modern Swift,
+  - SwiftUI-first UI,
+  - new platform features (yes, even the beta ones),
+  - and code that future-me hopefully won’t hate.
 - Play with:
-	- Swift 6+ features, macros, and all the shiny new toys.
-	- Async stuff, structured concurrency, and polite fights with the compiler.
+  - Swift 6+ features, macros, and all the shiny new toys.
+  - Async stuff, structured concurrency, and polite fights with the compiler.
 - Integrate:
-	- AI backends,
-	- APIs,
-	- and whatever else someone decided “will only take a couple of hours” (it won’t).
+  - AI backends,
+  - APIs,
+  - and whatever else someone decided “will only take a couple of hours” (it won't).
 
 **Short version:**
+
 > I turn coffee, bug reports, and design docs into SwiftUI views and questionable TODO comments.
 
----
+</section>
+
+<hr>
+
+<section class="section" markdown="1">
+
+<div class="section-header" markdown="1">
+<span class="section-tag">Off-duty</span>
 
 ## What I do for fun
+</div>
 
 When I’m not arguing with Xcode, I:
 
@@ -88,9 +140,17 @@ When I’m not arguing with Xcode, I:
 - **Play and tinker with tech & AI**  
   New tools, new models, new frameworks, new ways to make my life slightly easier and my setups significantly more complicated.
 
----
+</section>
+
+<hr>
+
+<section class="section" markdown="1">
+
+<div class="section-header" markdown="1">
+<span class="section-tag">Interests</span>
 
 ## Hobbies and interests
+</div>
 
 A non-exhaustive list of things my brain refuses to let go of:
 
@@ -103,54 +163,88 @@ A non-exhaustive list of things my brain refuses to let go of:
 - **Parties & music** — electronic, dance, and everything that feels good at 3 AM on an island.
 - **Photography & videography** — capturing moments, then obsessing over color grading.
 
----
+</section>
+
+<hr>
+
+<section class="section code-accent" markdown="1">
+
+<div class="section-header" markdown="1">
+<span class="section-tag">Languages</span>
 
 ## Languages I speak
+</div>
 
 I live in one country, was born in another, and work mostly in a third language, so my vocal cords run a small multilingual startup.
 
-- **Ukrainian** – my native firmware. The language of roots, with maximum depth and minimum user interface.
-- **russian** – also my native. Often used for personal conversations, long messages, and detailed overthinking with extra nuance.
-- **English** – fluent. Primary language for work, documentation, development, and arguing with compilers, APIs, and error messages.
+- `Ukrainian` – my native firmware. The language of roots, with maximum depth and minimum user interface.
+- `russian` – also my native. Often used for personal conversations, long messages, and detailed overthinking with extra nuance.
+- `English` – fluent. Primary language for work, documentation, development, and arguing with compilers, APIs, and error messages.
 
-I actively switch between these depending on context:
-- English for apps, code, and tech discussions.
-- russian for life, feelings, and the kind of topics that don’t belong in a commit message.
+My brain runs a two-language load balancer:
 
----
+- `English` for apps, code, serious tech talk, and surviving conversations with the international crowd orbiting me on the island.
+- `russian` for daily life, emotions, and those conversations that are better kept far away from version control history.
+
+</section>
+
+<hr>
+
+<section class="section" markdown="1">
+
+<div class="section-header" markdown="1">
+<span class="section-tag">Name</span>
 
 ## Why “taxiboatdriver”?
+</div>
 
 Because:
+
 - It’s slightly absurd.
 - It sounds like a guy who might pick you up from a pier at 3 AM.
-- It’s one of those jobs even Thai people can't apply for.
+- It’s one of those jobs even Thai people can’t apply for.
 
 Also, if someone ever yells “taxi boat!” on the beach, I can pretend it’s free brand activation.
 
----
+</section>
 
-## If you’re here for something practical
+<hr>
+
+<section class="section" markdown="1">
+
+<div class="section-header" markdown="1">
+<span class="section-tag">Practical</span>
+
+## If you're here for something practical
+</div>
 
 You might want to:
 
-- **Talk about apps**  
+- **Talk about apps**
   - Need an app for Apple platforms?
   - Want to modernize a codebase with SwiftUI?
   - Curious how to wire AI into your app without burning it down?
 
-- **Talk about automation**  
+- **Talk about automation**
   - Smart home setups,
   - Home Assistant,
   - Apple/HomeKit, Matter, Thread, and Zigbee integration,
   - making your lights, sensors, and speakers behave like a tiny obedient orchestra.
 
-- **Talk about anything from the list above** 
+- **Talk about anything from the list above**  
   Tech, space & physics, design, AI, island life, psychology, or my favorite: “how did you end up living there for over 11 years??”.
 
----
+</section>
+
+<hr>
+
+<section class="section code-accent" markdown="1">
+
+<div class="section-header" markdown="1">
+<span class="section-tag">Contacts</span>
 
 ## Where to find me
+</div>
 
 Online, you’ll usually see me as:
 
@@ -161,5 +255,8 @@ Online, you’ll usually see me as:
 If you’ve seen these somewhere near Swift, SwiftUI, AI, or smart home discussions — that was probably me.
 
 And if you somehow landed here by typing *“actual taxi boat driver Koh Phangan”* into a search engine:
+
 - I can’t take you to another island,
 - but I can help you ship an app.
+
+</section>

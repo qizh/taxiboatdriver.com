@@ -35,12 +35,19 @@ taxiboatdriver.com/
 - Should be generated and added to PR, comment, or a documentation `.md` file
 - Screenshots should be made for both `light` and `dark` color schemes and wrapped into a table with two columns named Light and Dark
 - Screenshots table should be wrapped into a `<details><summary>SUMMARY_TEXT</summary> ... </details>`
-- Summary should contain **screenshots** or **previews** wrapped into `<mark><code>...</code></mark>` like this: <mark><code>screenshots</code></mark> or <mark><code>previews</code></mark>
+- Words like **screenshot**, **previews**, their synonyms or combinations in details summary should be wrapped into `<mark><code>...</code></mark>` like this: <mark><code>screenshots</code></mark>
+  - Just a single `<mark>...</mark>` usage is preferred for one section (like the summary).
 
 ### Documentation
 - Keep `README.md` up to date with major changes
 - Document any special configurations or requirements
 - Include clear instructions for contributors
+
+### Color Representation
+- When documenting colors in tables or documentation, use shields.io badges for visual representation
+- Format: `![Label](https://img.shields.io/badge/%23-HEXCODE-HEXCODE?style=flat&labelColor=white)` for light backgrounds
+- Format: `![Label](https://img.shields.io/badge/%23-HEXCODE-HEXCODE?style=flat&labelColor=black)` for dark backgrounds
+- Example: ![AC-L](https://img.shields.io/badge/%23-00C7BE-00C7BE?style=flat&labelColor=white) displays the accent color visually
 
 ## What You Should Do
 

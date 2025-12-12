@@ -3,10 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="dark only">
 <link rel="icon" type="image/x-icon" href="taxiboatdriver_favicon.ico">
 <title>taxiboatdriver</title>
 <style>
+/* Force dark mode */
+@media (prefers-color-scheme: light) { html { display: none !important; } }
+
 :root {
 	color-scheme: light dark;
 
