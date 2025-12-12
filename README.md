@@ -203,7 +203,7 @@ _The site automatically adapts to your system's color scheme preference using CS
     
   ### Planned (or at least considered)
   
-  - Translation to russian.
+  - Translation to Russian.
   - Alternative intros for different moods (more serious / more chaotic).
   - A dedicated "Projects / Apps" section describing actual work.
   - A concise "Work with me" block with links and a less self-sabotaging pitch.
